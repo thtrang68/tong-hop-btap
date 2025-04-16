@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bài Tập Khoa Học - Trần Thùy Trang</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Segoe UI', sans-serif;
+            background: #f0f4f8;
+            color: #333;
+        }
+
+        header {
+            background: #0077b6;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+
+        header h1 {
+            font-size: 28px;
+        }
+
+        .welcome-container {
+            background: #ffffff;
+            margin: 30px auto;
+            width: 90%;
+            max-width: 900px;
+            border-radius: 15px;
+            padding: 20px;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+            display: flex;
+            align-items: center;
+            gap: 20px;
+        }
+
+        .welcome-container img {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 4px solid #0077b6;
+        }
+
+        .welcome-text {
+            font-size: 22px;
+            font-weight: bold;
+            color: #0077b6;
+        }
+
+        nav {
+            background: #023e8a;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            padding: 10px 0;
+            margin-bottom: 30px;
+        }
+
+        nav a {
+            color: white;
+            margin: 5px 10px;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 8px;
+            transition: background 0.3s;
+            font-weight: 500;
+        }
+
+        nav a:hover {
+            background: #0096c7;
+        }
+
+        .section {
+            background: white;
+            margin: 20px auto;
+            width: 90%;
+            max-width: 900px;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.08);
+            padding: 20px;
+            cursor: pointer;
+        }
+
+        .section h2 {
+            color: #023e8a;
+            margin-bottom: 10px;
+        }
+
+        .section ul {
+            list-style: none;
+            padding-left: 20px;
+            margin-top: 10px;
+        }
+
+        .section ul li {
+            margin: 6px 0;
+        }
+
+        .section ul li a {
+            color: #0077b6;
+            font-weight: 500;
+            text-decoration: none;
+        }
+
+        .section ul li a:hover {
+            text-decoration: underline;
+        }
+
+        .hidden {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Danh Sách Bài Tập - Trần Thùy Trang</h1>
+    </header>
+
+    <div class="welcome-container">
+        <div class="welcome-text">Chào mừng đến với trang bài tập của Trần Thùy Trang</div>
+    </div>
+
+    <nav>
+        <a href="#bt1">Buổi 1 & 2</a>
+        <a href="#bt3">Buổi 3</a>
+        <a href="#bt4">Buổi 4</a>
+        <a href="#bt5">Buổi 5</a>
+        <a href="#bt6">Buổi 6</a>
+        <a href="#bt7">Buổi 7</a>
+        <a href="#bt8">Buổi 8</a>
+        <a href="#bt9">Buổi 9</a>
+    </nav>
+
+    <div id="bt1" class="section" onclick="toggleVisibility('content1')">
+        <h2>Buổi 1 & 2</h2>
+        <ul id="content1" class="hidden">
+            <li><a href="https://vumaiphuong224001823.github.io/baitapweb/">Bài Tập</a></li>
+           
+        </ul>
+    </div>
+
+    <div id="bt3" class="section" onclick="toggleVisibility('content3')">
+        <h2>Buổi 3</h2>
+        <ul id="content3" class="hidden">
+            <li><a href="https://vumaiphuong224001823.github.io/btvn-bai1-buoi2/">Bài 1</a></li>
+            <li><a href="https://vumaiphuong224001823.github.io/btvn-b2-/">Bài 2</a></li>
+            <li><a href="https://vumaiphuong224001823.github.io/btvn-bai3/">Bài 3</a></li>
+            
+        </ul>
+    </div>
+
+    <div id="bt4" class="section" onclick="toggleVisibility('content4')">
+        <h2>Buổi 4</h2>
+        <ul id="content4" class="hidden">
+            <li><a href="https://vumaiphuong224001823.github.io/bai1.1-btvn-buoi4/">Bài 1.1</a></li>
+            <li><a href="https://vumaiphuong224001823.github.io/bai1.2-btvn-buoi4/">Bài 1.2</a></li>
+          
+        </ul>
+    </div>
+
+    <div id="bt5" class="section" onclick="toggleVisibility('content5')">
+        <h2>Buổi 5</h2>
+        <ul id="content5" class="hidden">
+            <li><a href="https://vumaiphuong224001823.github.io/b1-buoi5/">Bài 1</a></li>
+          
+        </ul>
+    </div>
+
+    <div id="bt6" class="section" onclick="toggleVisibility('content6')">
+        <h2>Buổi 6</h2>
+        <ul id="content6" class="hidden">
+            <li><a href="https://vumaiphuong224001823.github.io/btlop-float/">Bài Float</a></li>
+            <li><a href="https://vumaiphuong224001823.github.io/flex.html/">Bài Flex</a></li>
+            <li><a href="https://vumaiphuong224001823.github.io/btap-lop-grid/">Bài Grid</a></li>
+            <li><a href="https://vumaiphuong224001823.github.io/b1-btvn-buoi6/">Bài 1 BTVN</a></li>
+            <li><a href="https://vumaiphuong224001823.github.io/b2-btvn-buoi6/">Bài 2 BTVN</a></li>
+           
+        </ul>
+    </div>
+
+    <div id="bt7" class="section" onclick="toggleVisibility('content7')">
+        <h2>Buổi 7</h2>
+        <ul id="content7" class="hidden">
+            <li><a href="https://vumaiphuong224001823.github.io/b1-buoi7/">Bài 1</a></li>
+            <li><a href="https://vumaiphuong224001823.github.io/b2-buoi7/">Bài 2</a></li>
+            <li><a href="https://vumaiphuong224001823.github.io/b3-buoi7/">Bài 3</a></li>
+           
+        </ul>
+    </div>
+
+    <div id="bt8" class="section" onclick="toggleVisibility('content8')">
+        <h2>Buổi 8</h2>
+        <ul id="content8" class="hidden">
+            <li><a href="https://vumaiphuong224001823.github.io/b1-buoi8-cach1/">Bài 1 - Cách 1</a></li>
+            <li><a href="https://vumaiphuong224001823.github.io/b1-buoi8-cach2/">Bài 1 - Cách 2</a></li>
+            <li><a href="https://vumaiphuong224001823.github.io/b1-btvn-buoi8-c1/">Bài 1 BTVN - Cách 1</a></li>
+            <li><a href="https://vumaiphuong224001823.github.io/b1-btvn-buoi8-cach2/">Bài 1 BTVN - Cách 2</a></li>
+            <li><a href="https://vumaiphuong224001823.github.io/b2-btvn-buoi8/">Bài 2 BTVN</a></li>
+            <li><a href="https://vumaiphuong224001823.github.io/b3.1-btvn-buoi8/">Bài 3 BTVN - Đoán số 0/1</a></li>
+            <li><a href="https://vumaiphuong224001823.github.io/b3-btvn-buoi8/">Bài 3 BTVN - Đoán số 1-10</a></li>
+        </ul>
+    </div>
+
+    <div id="bt9" class="section" onclick="toggleVisibility('content9')">
+        <h2>Buổi 9</h2>
+        <ul id="content9" class="hidden">
+            <li><a href="https://vumaiphuong224001823.github.io/b4-buoi9/">Bài 4</a></li>
+            <li><a href="https://vumaiphuong224001823.github.io/b5-buoi9/">Bài 5</a></li>
+            <li><a href="https://vumaiphuong224001823.github.io/b6.1-buoi9/">Bài 6.1</a></li>
+            <li><a href="https://vumaiphuong224001823.github.io/b6.2-buoi9/">Bài 6.2</a></li>
+        </ul>
+    </div>
+
+    <script>
+        function toggleVisibility(id) {
+            const sections = document.querySelectorAll('.section ul');
+            sections.forEach(ul => {
+                if (ul.id !== id) ul.classList.add('hidden');
+            });
+            document.getElementById(id).classList.toggle('hidden');
+        }
+    </script>
+</body>
+</html>
